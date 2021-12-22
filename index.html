@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Xây dựng lớp Date</title>
+    <script src="date.js"></script>
+</head>
+<body>
+<script>
+    let date1 = new Date (22, 12, 2021);
+    let day = date1.getDay();
+    let month = date1.getMonth();
+    let year = date1.getYear();
+    alert(day+'/'+month+'/'+year);
+    date1.setDay(5);
+    date1.setMonth(7);
+    date1.setYear(2020);
+    alert(day+'/'+month+'/'+year);
+    date1.setDate(1,1,2022);
+    console.log(date1.toString());
+
+</script>
+</body>
+</html>
